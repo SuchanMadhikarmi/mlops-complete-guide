@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Data (track with DVC)
+*.csv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+data/raw/
+data/processed/
+
+# Models (track with DVC or MLflow)
+*.pkl
+*.joblib
+*.onnx
+*.pt
+*.pth
+*.safetensors
+*.bin
+models/
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# DVC
+.dvc/cache/
+.dvc/tmp/
+
+# Secrets -- NEVER commit these
+.env
+.env.*
+*.key
+*.pem
+secrets.yaml
+secrets.json
+*_credentials.json
+*_credentials.yaml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Docker
+.docker/
